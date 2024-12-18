@@ -79,7 +79,9 @@ CREATE TABLE LoanDetail
     LoanDetailID INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
     LoanID INT NOT NULL,
     BookID VARCHAR(10) NOT NULL,
-    ReturnDate DATE NULL
+    DueDate DATE NULL,
+    ReturnDate DATE NULL,
+    isdamaged Boolean NULL
 );
 
 -- Thêm FOREIGN KEY và CONSTRAINTS
